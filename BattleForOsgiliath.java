@@ -118,7 +118,6 @@ public class BattleForOsgiliath {
 		System.out.println("** Epic combat actions take place **");
 		faramir.realizeThereIsNoHope();
 		denethor.callTroopsBack();
-		System.out.println("** THE END **");
 	}
 
 	public static void main(String... args) {
