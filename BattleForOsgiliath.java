@@ -43,7 +43,7 @@ class Denethor extends Actor {
 	private Command rideScheme;
 	public Denethor(BattleForOsgiliath battle) { super(battle); }
 
-	public void elaborateSchemes(BattleForOsgiliath battle) {
+	public void elaborateSchemes() {
 		System.out.println("Denethor elaborates his battle schemes...");
 
 		rideScheme = new Scheme(
@@ -112,7 +112,7 @@ public class BattleForOsgiliath {
 	public final Horseman horseman = new Horseman(this);
 
 	public void playScene() {
-		denethor.elaborateSchemes(this);
+		denethor.elaborateSchemes();
 		denethor.orderToRide();
 		faramir.spotOrc();
 		System.out.println("** Epic combat actions take place **");
